@@ -17,7 +17,6 @@ export class KeepAliveService {
       console.log('Solicitud enviada correctamente para mantener vivo el servicio');
       this.logger.log('Solicitud enviada correctamente para mantener vivo el servicio');
     } catch (error) {
-      console.error('Error al enviar la solicitud:', error);
       this.logger.error('Error al enviar la solicitud', error.stack);
     }
   }
