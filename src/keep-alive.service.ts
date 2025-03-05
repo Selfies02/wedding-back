@@ -13,7 +13,7 @@ export class KeepAliveService {
     this.logger.log('Iniciando la solicitud de ping...');
     
     try {
-      await axios.get('https://wedding-back-bkutww.fly.dev'); // Cambia la URL si es necesario
+      await axios.get('http://18.188.173.108'); // Cambia la URL si es necesario
       console.log('Solicitud enviada correctamente para mantener vivo el servicio');
       this.logger.log('Solicitud enviada correctamente para mantener vivo el servicio');
     } catch (error) {
